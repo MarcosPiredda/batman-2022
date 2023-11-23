@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-y: scroll;
+  }
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://images5.alphacoders.com/131/1311166.jpeg');
+    background-position: 10% 10%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.fotos-banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 100px;
+  }
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-right: 20px;
+  }
+
+.card {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+
+ card:hover {
+    transform: scale(1.02);
+  }
+  
+.banner-1 {
+    background-image: url('https://wallpapers.com/images/featured/o-iphone-do-batman-5dzvpeegyptrgvx0.jpg');
+  }
+  
+.banner-2 {
+    background-image: url('https://www.mordeo.org/files/uploads/2022/03/Batman-Minimal-4K-Ultra-HD-Mobile-Wallpaper-950x1689.jpg')
+  }
+  
+.banner-3 {
+    background-image: url('https://www.mordeo.org/files/uploads/2022/01/The-Batman-2022-4K-Ultra-HD-Mobile-Wallpaper-950x1689.jpg');
+  }
+  
+.banner-4 {
+    background-image: url('https://i.pinimg.com/564x/4b/b8/a0/4bb8a04123f1d4b8b4aed19f71c08cf9.jpg');
+  }
+  
+.banner-5 {
+    background-image: url('https://i.pinimg.com/564x/d9/6e/0c/d96e0c8d086c986d0eedda41d1c069a0.jpg');
+  }
+  
+.banner-6 {
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/482/179/desktop-wallpaper-the-batman-movie-2022-robert-pattinson-phone-iphone-batman-movie-2022-ultra.jpg');
+  }
+  
+.banner-7 {
+    background-image: url('https://img.elo7.com.br/product/original/3FBBEDD/big-poster-filme-batman-2022-90x60-cm-lo006-poster.jpg');
+  }
+  
+.banner-8 {
+    background-image: url('https://cdn.awsli.com.br/2500x2500/1610/1610163/produto/177680667/poster-the-batman-e-6db76beb.jpg');
+  }
+  
+.banner-9 {
+    background-image: url('https://www.mordeo.org/files/uploads/2022/01/Robert-Pattinson-In-The-Batman-2022-4K-Ultra-HD-Mobile-Wallpaper-950x1689.jpg');
+  }
+  
+  footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+spam {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+  .footer-navigation {
+      display: block;
+  }
+
+  nav {
+      display: none;
+  }
+
+  #banner {
+      background-position: 50%;
+      margin-top: 1px;
+  }
+
+  .content {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #sinopse {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .cards-content {
+      grid-template-columns: 1fr;
+      margin-top: 1px;
+  }
+}
